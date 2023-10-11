@@ -5,11 +5,11 @@ class Rectangulo:
         
     def perimetro(self):
         p = 2 * (self.__largo) + 2 * (self.__ancho)
-        return
+        return p
     
     def area(self):
         a = self.__largo * self.__ancho
-        return
+        return a
     
     def ver(self):
         print (f'Longitud: {self.__largo}')
