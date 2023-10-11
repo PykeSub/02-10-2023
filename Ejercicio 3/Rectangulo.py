@@ -1,21 +1,22 @@
 class Rectangulo:
     def __init__(self, largo: float, ancho: float):
-        self.largo = largo
-        self.ancho = ancho
+        self.__largo = largo
+        self.__ancho = ancho
         
     def perimetro(self):
-        return 2 * (self.largo + self.ancho)
+        p = 2 * (self.__largo) + 2 * (self.__ancho)
+        return
     
     def area(self):
-        return self.largo * self.ancho
+        a = self.__largo * self.__ancho
+        return
     
     def ver(self):
-        print (f'Longitud: {self.largo}')
-        print (f'Ancho: {self.ancho}')
+        print (f'Longitud: {self.__largo}')
+        print (f'Ancho: {self.__ancho}')
         print (f'Perimetro: {self.perimetro()}')
         print(f'Area: {self.area()}')
         
-    def __str__(self):
-        return f'Rectangulo de largo {self.largo} y ancho {self.ancho}'
+
     
     
