@@ -8,14 +8,15 @@ class Cubo(Rectangulo):
         self.__lado3 = lado3
         
     def volumen(self):
-        v = self.lado3 ** 3
+        v = self.__lado3 ** 3
         #v = super().area() * self.__lado3
         #v = super().get__ancho() * super().get__largo() * self.__lado3
+        return v
     
     def ver(self):
         print(f'Lado 3: {self.__lado3}')
         print(f'Volumen: {self.volumen()}')
-        print(f'Perimetro: {self.Perimetro()}')
-        print(f'Area: {self.Area()}')
+        print(f'Perimetro: {self.perimetro()}')
+        print(f'Area: {self.area()}')
 
     
